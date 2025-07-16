@@ -1,12 +1,49 @@
-import "./Navbar.css"
+import './Navbar.css';
 
+import logo from '../Assets/logo.png';
+import cart_icon from '../Assets/cart_icon.png';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Navbar = () => {
+  const [menu, setMenu] = useState('Shop')
   return (
-	<div>
-	  <h2>Navbar</h2>
-	</div>
-  )
-}
+    <div className="navbar">
+      <div className="nav-logo">
+        <Link to="/">
+          <img src={logo} alt="logo" />
+        </Link>
+        <Link to="/">
+          {' '}
+          <p>SHOPPER</p>
+        </Link>
+      </div>
+      <ul className="nav-menu">
+        <li onClick={() => setMenu('shop')}>
+          <Link to="/">Shop{menu === 'shop' ? <hr/> : <></>}</Link>
+        </li>
+        <li onClick={() => setMenu('mens')}>
+          <Link to="/mens">Men{menu === 'mens' ? <hr/> : <></>}</Link>
+        </li>
+        <li onClick={() => setMenu('women')}>
+          <Link to="/women">Women{menu === 'women' ? <hr/> : <></>}</Link>
+        </li>
+        <li onClick={() => setMenu('kids')}>
+          <Link to="/kids">Kids{menu === 'kids' ? <hr/> : <></>}</Link>
+        </li>
+      </ul>
+      <div className="nav-login-cart">
+        <Link to="/login">
+          <button>Login</button>
+        </Link>
 
-export default Navbar
+        <Link to="/cart">
+          <img src={cart_icon} alt="" />
+        </Link>
+        <div className="nav-cart-count">0</div>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;

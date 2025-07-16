@@ -10,7 +10,7 @@ import p8_img from "./product_28.png";
 let new_collections = [
   {
     id: 12,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse Supper clothes and supper price",
     image: p1_img,
     new_price: 50.0,
     old_price: 80.5,

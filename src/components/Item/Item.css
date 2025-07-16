@@ -1,0 +1,39 @@
+.item {
+	max-width: 300px;
+	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+	padding: 5px 10px;
+}
+.item img {
+	width: 100%;
+}
+.item p {
+	margin: 6px 0;
+	  white-space: nowrap; 
+	  overflow: hidden;
+	  text-overflow: ellipsis;
+}
+
+.item-price {
+	display: flex;
+	gap: 20px;
+}
+
+.item-price-new {
+color: #374151;
+font-size: 18px;
+font-weight: 600;
+}
+
+.item-price-old {
+	text-size-adjust: auto;
+	color: #8c8c8c;
+	font-size: 18px;
+	font-weight: 500;
+	text-decoration: line-through;
+}
+
+.item:hover {
+	transform: scale(1.05);
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+}

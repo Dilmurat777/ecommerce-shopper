@@ -1,0 +1,133 @@
+.cart-items {
+  margin: 100px 0;
+}
+
+.cart-items hr {
+  height: 3px;
+  background: #e2e2e2;
+  border: 0;
+}
+
+.cart-items-format-main {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #454545;
+  padding: 20px 0;
+}
+
+.cart-items-format {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.cart-icon-product-icon {
+  height: 72px;
+}
+
+.cart-items-quantity {
+  width: 62px;
+  height: 50px;
+  border: 2px solid #ebebeb;
+  background: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cart-icon-remove-item {
+  width: 15px;
+  margin: 0 40px;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  background-color: #e2e2e2;
+  color: #454545;
+  border-radius: 50%;
+  padding: 5px 5px;
+}
+
+.cart-icon-remove-item:hover {
+  transform: scale(1.2);
+  background-color: #f46e6e;
+  color: #e2e2e2;
+  transition: all 0.2s ease-in;
+}
+
+.cart-items-down {
+  display: flex;
+  margin: 100px 0;
+}
+
+.cart-items-total {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cart-items-total-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.cart-items-total button {
+  width: 262px;
+  height: 58px;
+  outline: none;
+  border: none;
+  background: #ff4141;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cart-items-promo-code {
+  flex: 1;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.cart-items-promo-code p {
+  color: #555;
+}
+
+.cart-items-promo-code-box {
+  /* width: 100%; */
+  margin-top: 15px;
+  padding-left: 20px;
+  height: 58px;
+  background-color: #eaeaea;
+  border-radius: 10px;
+}
+
+.cart-items-promo-code-box input {
+  width: 330px;
+  height: 50px;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 16px;
+}
+
+.cart-items-promo-code-box button {
+width: 170px;
+height: 58px;
+background-color: black;
+color: white;
+font-size: 16px;
+font-weight: 600;
+cursor: pointer;
+border: none;
+outline: none;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}

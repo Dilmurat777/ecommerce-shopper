@@ -1,10 +1,14 @@
 import './ProductDisplay.css';
 import start_icon from '../Assets/star_icon.png';
 import start_dull_icon from '../Assets/star_dull_icon.png';
+import { useContext } from 'react';
+import { ShopContext } from '../../Context/ShopContext';
+import { useNavigate } from 'react-router-dom';
 
 const ProductDisplay = (props) => {
   const { product } = props;
-
+  const { addToCart } = useContext(ShopContext)
+  const navigate = useNavigate()
   return (
     <div className="product-display">
       <div className="product-display-left">
@@ -47,7 +51,10 @@ const ProductDisplay = (props) => {
             <div>XXL</div>
           </div>
         </div>
-        <button>ADD TO CART</button>
+        <div className="product-display-right-buttons">
+          <button onClick={() => addToCart(product.id)}>ADD TO CART</button>
+          <button onClick={() => navigate(-1)}>Go To Back</button>
+        </div>
         <p className="product-display-right-category">
           <span>Category :</span>Women, T-Shirt, Crop Top
         </p>
